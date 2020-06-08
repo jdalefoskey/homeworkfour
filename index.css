@@ -1,0 +1,81 @@
+body {
+    background-color: gray;
+    
+}
+
+a {
+    color:lightgray;
+}
+
+.header {
+    height: 75px;
+    max-width: 1024px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#viewHighScores {
+    width: 50%;
+   float: left;
+    
+}
+#viewTimer {
+    text-align: right;
+    color: lightgray;
+    justify-content: right;
+    width: 50%;
+   float: right;
+}
+
+#anchorTimer {
+    
+}
+
+/* #header1 {
+    margin-left: 20px;
+    width: 400px;
+    text-align: center;
+    background-color: black;
+    
+} */
+
+#para1 {
+    text-align: center;
+    padding-top: 25px;
+
+}
+
+.box {
+    background-color: cadetblue;
+    padding-top: 50px;
+    text-align: center;
+    width: 400px;
+    margin: 0 auto;
+    box-shadow: 10px 10px 8px black;
+    margin-top:10%;
+}
+#mainButton {
+    margin-bottom:20px;
+    background-color: darkolivegreen;
+    color: lightgray;
+    border-radius: 5px;
+    box-shadow: 3px 3px 1.5px black;
+
+}
+
+.headerHighScore {
+    justify-content: center;
+}
+
+#startOver {
+    color: lightgray;
+    float: left;
+}
+
+#timerinfo {
+    color: lightgray;
+}
+
+#time {
+    color: black!important;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="quiz.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="headdr" class="header">
+            <div id="headdr"  id="startOver"><a href="index.html">Start Over</a></div>
+            
+            <div id="headdr">Time left <span id="time">02:00</span> minutes!</div>
+        </div>
+
+    <div id="Quiz" class="Quiz1">
+        <h1>Javascript Fun</h1>
+        
+        <p id="intro">
+        Now is your chance to prove your Javascript skills! Dive in and see how bad you suck!</p>
+       
+        
+        <p id="QuestionQuiz" class="Qn">
+        Question X: QUESTION DESCRIPTION TO GO HERE</p>
+        
+        
+        <button id="Answer1" class="Ans" onclick="Answer1Select()"> AnswerChoice1 </button> 
+        <button id="Answer2" class="Ans" onclick="Answer2Select()"> AnswerChoice2 </button> 
+        <button id="Answer3" class="Ans" onclick="Answer3Select()"> AnswerChoice3 </button>
+        <p>
+        
+        <button id="Next" class="NextQ" onclick="NextQu()">Next Question </button>
+        <button id="Finish" class="FinishQ" onclick="FinishQu()">Finish Quiz</button></p>
+        
+        <p id="Solution" class="Sn">
+        
+        </p> 
+        
+        <p id="CurrentQuScore" class="Current">
+        
+        </p>
+        
+        <p id="Rolling Score" class="RS">
+        Your total score for this quiz is X 
+        
+        </p>
+        
+        </div>
+
+        <script src="script.js"></script>
+    
+</body>
+</html>

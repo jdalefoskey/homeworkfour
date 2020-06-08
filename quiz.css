@@ -1,0 +1,93 @@
+ * {
+    color: black;
+} 
+#answer1 {
+        color: white;
+}
+
+body {
+    background-color: gray;
+}
+
+div.Quiz1 {
+        margin-left:20%;
+        margin-right:20%;
+        margin-top: 10%;
+        box-shadow: 10px 10px 8px #888888;
+        background-color: cadetblue;
+        text-align: center;
+        box-shadow: 10px 10px 8px black;
+
+}
+
+button.Ans {
+        color: white;
+         background-color:darkgray;
+       border: none;
+       padding: 15px 32px;
+       text-align: center;
+       text-decoration: none;
+       display: inline-block;
+       font-size: 16px;
+       margin: 4px 2px;
+       cursor: pointer;
+       border-radius: 25px;
+}
+      
+button.NextQ {
+        background-color: gray;
+       border: none;
+       padding: 15px 32px;
+       text-align: center;
+       text-decoration: none;
+       display: none;
+       font-size: 16px;
+       margin: 4px 2px;
+       cursor: pointer;
+       border-radius: 25px;
+}
+      
+button.FinishQ {
+        background-color: gray;
+       border: none;
+       display: none;
+       padding: 15px 32px;
+       text-align: center;
+       text-decoration: none;
+       font-size: 16px;
+       margin: 4px 2px;
+       cursor: pointer;
+       border-radius: 25px;
+}
+      
+p.Qn {
+        font-size: 24px;
+}
+      
+p.RS {
+        display: none;
+        font-size: 20px;
+        font-weight: : 900;
+}
+      
+p.Sn {
+        font-size: 20px;
+}
+      
+p.Current {
+        font-size: 18px;
+}
+
+.header {
+  text-align: center;
+  background-color: cadetblue;
+  width: 140px;
+  box-shadow: 10px 10px 8px black;
+}
+
+#headdr {
+  padding-bottom: 5px;
+  color: black;
+}
+
+
