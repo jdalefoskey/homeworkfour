@@ -1,6 +1,8 @@
+let userName = prompt("What is your first name? After you click ok, the quiz will start.");
+
 function startTimer(duration, display) {
     var timer = duration, minutes, seconds;
-    setInterval(function () {
+    myTimer = setInterval(function () {
         minutes = parseInt(timer / 60, 10);
         seconds = parseInt(timer % 60, 10);
 
@@ -64,10 +66,18 @@ function FinishQu() {
   document.getElementById("Solution").style.display="none";
   document.getElementById("CurrentQuScore").style.display="none";
   document.getElementById("Finish").style.display="none";
+
+  clearTimeout(myTimer);
+  let endTime = document.getElementById("time").textContent;
+  
+  
+  
+  
+  
   }
 
-var j;
-//j i
+
+
 
 var ScoreTotal=[];
 
@@ -86,7 +96,7 @@ function Answer1Select() {
   document.getElementById("Answer3").style.display = "none";
   document.getElementById("CurrentQuScore").innerHTML="You scored "+Score[i][j]+" on this question";
   ScoreTotal.push(Score[i][j]);
-  document.getElementById("Rolling Score").innerHTML="Hey! Thanks a lot for taking my quiz  your final score is..."+ScoreTotal.reduce(getSum)+" out of 5";
+  document.getElementById("Rolling Score").innerHTML="Hey! " + userName + "  your final score is..."+ScoreTotal.reduce(getSum)+" out of 5";
       }
       else{
 
@@ -99,7 +109,7 @@ function Answer1Select() {
         document.getElementById("Answer3").style.display = "none";
         document.getElementById("CurrentQuScore").innerHTML="You scored "+Score[i][j]+" on this question";
         ScoreTotal.push(Score[i][j]);
-        document.getElementById("Rolling Score").innerHTML="Hey! Thanks a lot for taking my quiz - your final score is..."+ScoreTotal.reduce(getSum)+" out of 5";
+        document.getElementById("Rolling Score").innerHTML="Hey! " + userName + " your final score is..."+ScoreTotal.reduce(getSum)+" out of 5";
 
 
       }
@@ -115,7 +125,7 @@ function Answer1Select() {
     document.getElementById("Answer3").style.display = "none";
     document.getElementById("CurrentQuScore").innerHTML="You scored "+Score[i][j]+" on this question";
     ScoreTotal.push(Score[i][j]);
-    document.getElementById("Rolling Score").innerHTML="Hey! Thanks a lot for taking my quiz - your final score is..."+ScoreTotal.reduce(getSum)+" out of 5";
+    document.getElementById("Rolling Score").innerHTML="Hey! " + userName + " your final score is..."+ScoreTotal.reduce(getSum)+" out of 5";
   }
   else{
 
@@ -128,7 +138,7 @@ document.getElementById("CurrentQuScore").style.display = "block";
     document.getElementById("Answer3").style.display = "none";
     document.getElementById("CurrentQuScore").innerHTML="You scored "+Score[i][j]+" on this question";
     ScoreTotal.push(Score[i][j]);
-    document.getElementById("Rolling Score").innerHTML="Hey! Thanks a lot for taking my quiz - your final score is..."+ScoreTotal.reduce(getSum)+" out of 5";
+    document.getElementById("Rolling Score").innerHTML="Hey! " + userName + " your final score is..."+ScoreTotal.reduce(getSum)+" out of 5";
 
 
   }
@@ -144,7 +154,7 @@ document.getElementById("CurrentQuScore").style.display = "block";
       document.getElementById("Answer2").style.display = "none";
       document.getElementById("CurrentQuScore").innerHTML="You scored "+Score[i][j]+" on this question";
       ScoreTotal.push(Score[i][j]);
-      document.getElementById("Rolling Score").innerHTML="Hey! Thanks a lot for taking my quiz - your final score is..."+ScoreTotal.reduce(getSum)+" out of 5";
+      document.getElementById("Rolling Score").innerHTML="Hey! " + userName + " your final score is..."+ScoreTotal.reduce(getSum)+" out of 5";
     }
     else{
 
@@ -157,7 +167,7 @@ document.getElementById("CurrentQuScore").style.display = "block";
       document.getElementById("Answer2").style.display = "none";
       document.getElementById("CurrentQuScore").innerHTML="You scored "+Score[i][j]+" on this question";
       ScoreTotal.push(Score[i][j]);
-      document.getElementById("Rolling Score").innerHTML="Hey! Thanks a lot for taking my quiz - your final score is..."+ScoreTotal.reduce(getSum)+" out of 5";
+      document.getElementById("Rolling Score").innerHTML="Hey! " + userName + " your final score is..."+ScoreTotal.reduce(getSum)+" out of 5";
 
 
     }
