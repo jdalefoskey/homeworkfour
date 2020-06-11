@@ -29,7 +29,7 @@ Then either open the html files in browser for inspection, or using your choice 
 
 ## Deploying the Game
 ---
-From any web browser visit this site to begin playing
+From any web browser visit this site  https://jdalefoskey.github.io/homeworkfour/  to begin playing
 
 ## Repository contents
 ---
